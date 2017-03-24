@@ -1,7 +1,19 @@
+body{
+  background-color: #A3C4BC;
+}
+p{
+  font-weight: bold;
+  font-size: 18px;
+}
+.panel{
+  background-color: #CAE5FF;
+}
+
+
 #c-sharp,#java,#ruby,#css,#php {
   display : none;
 }
 
 .well{
-  background-color: blue;
+  background-color: #A2E8DD;
 }
