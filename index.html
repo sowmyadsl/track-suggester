@@ -1,94 +1,138 @@
-  <!DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.0.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Track Suggester</title>
+  	<meta charset="utf-8">
+  	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  	<link href="css/styles.css" rel="stylesheet" type="text/css">
+  	<script src="js/jquery-3.2.0.js">
+  	</script>
+  	<script src="js/scripts.js">
+  	</script>
+  	<title>Track Suggester</title>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1> Track Suggester</h1>
-        <p>For Prospective Epicodus Students !! </p>
-      </div>
-
-    <div class="well">
-    <form>
-      <div class="row">
-        <div class="col-md-6">
-          <label>What kind of company do you see yourself working for?</label>
-          <select class="form-control" id="company">
-            <option value="corp">Well-established Enterprise</option>
-            <option value="start-up">a Local startup</option>
-          </select>
-
-          <label>What interests you most about programming?</label>
-          <select class="form-control" id="interests">
-            <option value="websites">Designing websites</option>
-            <option value="business">Building software and develop products</option>
-            <option value="android">Working as Android developer</option>
-            <option value="apps">Building interactive web applications</option>
-          </select>
-
-          <label>After finishing Epicodus Course,What you would like to do?</label>
-          <select class="form-control" id="important">
-            <option value="job">Finding a job quickly</option>
-            <option value="atmosphere">Working at a company </option>
-            <option value="practical">Learn still and practice more</option>
-          </select>
-
-          <label>Which of the following interest you more?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="style" value="5" checked>
-              Back-end
-            </label>
+  	<div class="container">
+  		<div class="page-header">
+  			<h1>Epicodus Track Suggester</h1>
+  		</div>
+  		<p><span class="sub-header">For Prospective Epicodus Students!</span></p>
+  		<div class="survey-box">
+  			<div class="panel panel-primary">
+  				<div class="panel-heading">
+  					<h3 class="panel-title">Answer any three of questions and get your recommended track information:</h3>
+  				</div>
+  				<div class="panel-body survey-body">
+  					<div class="question-title">
+  						<p>What kind of software you like to work on?</p>
+  					</div>
+  					<div class="question-body">
+  						<div class="radio">
+  							<label><input id="software" name="software" type="radio">Proprietary</label>
+  						</div>
+  						<div class="radio">
+  							<label><input name="software" type="radio">Open Source</label>
+  						</div>
+  						<div class="question-title">
+  							<p>Would you be interested to build mobile applications or interested in building websites?</p>
+  						</div>
+  						<div class="question-body">
+  							<div class="radio">
+  								<label><input id="apps" name="apps" type="radio">I want to build mobile applications!</label>
+  							</div>
+  							<div class="radio">
+  								<label><input name="apps" type="radio">I want to build websites!</label>
+  							</div>
+  						</div>
+  						<div class="question-title">
+  							<p>Are you interested in designing content for mobile devices or larger screens?</p>
+  						</div>
+  						<div class="question-body">
+  							<div class="radio">
+  								<label><input id="mobile" name="mobile" type="radio">Yes! I love designing apps for a mobile!</label>
+  							</div>
+  							<div class="radio">
+  								<label><input name="mobile" type="radio">No I enjoy building software for larger devices.</label>
+  							</div>
+  						</div>
+  						<div class="question-title">
+  							<p>Would you like to work for a well established enterprise or for a local startup?</p>
+  						</div>
+  						<div class="question-body">
+  							<div class="radio">
+  								<label><input id="large" name="large" type="radio">Large organizations. I prefer to be organized and systematic !</label>
+  							</div>
+  							<div class="radio">
+  								<label><input name="large" type="radio">Startups! I want to grow.</label>
+  							</div>
+  						</div>
+  						<div class="question-title">
+  							<p>Would you like to do front end or manipulate data to solve problems in the back end?</p>
+  						</div>
+  						<div class="question-body">
+  							<div class="radio">
+  								<label><input id="design" name="front" type="radio">I want to make pretty things for people!</label>
+  							</div>
+  							<div class="radio">
+  								<label><input name="front" type="radio">I'm all about logic and problem solving.</label>
+  							</div>
+  						</div>
+  						<div class="question-title">
+  							<p>How do you feel about problem-solving skills?</p>
+  						</div>
+  						<div class="question-body">
+  							<div class="radio">
+  								<label><input id="problem" name="problem" type="radio">I'm up for anything</label>
+  							</div>
+  							<div class="radio">
+  								<label><input name="problem" type="radio">Okay not so good</label>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="style" value="3">
-              Front-end
-            </label>
-          </div>
-          <label>Are you looking for a designing a layout for webpages than writing code for them?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="design" value="4" checked>
-              Yes
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="design" value="7">
-              Both works
-            </label>
-          </div>
-        </div><!--end of col 1-->
+          <button class="btn btn-primary" id="submit-survey">Submit</button><br>
 
-        <div class="col-md-6">
-          <div class="form-group" id="formname">
-            <label for="name">*Name:</label>
-            <input id="name" class="form-control" type="text">
-          </div>
-          <div class="form-group" id="formemail">
-            <label for="email">*Email:</label>
-            <input id="email" class="form-control" type="text">
-          </div>
-          <label for="address">Address:</label>
-          <textarea id="address" class="form-control" rows="3"></textarea>
+  			<div class="well"  id="c-sharp">
+  				<p>The C# language track is the one for you! Here are a few of the reasons why:</p>
+  				<ul>
+  					<li>A well estabilished language used by many large companies and governmental organizations</li>
+  					<li>The language of Microsoft and Windows</li>
+  					<li>Used by video games built with the Unity Engine and for virtual reality software.</li>
+  				</ul>
+  			</div>
+  		</div>
 
-          <label for="comments">Additional Comments:</label>
-          <textarea id="comments" class="form-control" rows="3"></textarea>
-          <br>
-          <button type="submit" class="btn btn-primary">Submit!</button>
-              </div><!--end of col 2-->
-            </div><!--end of row 1-->
-          </form>
-        </div><!--end of blanks/panel body-->
-      </div><!--end of formInputSection-->
-    
-      </body>
+  		<div class="well" id="java">
+  			<p>The Java language track is the one for you! Here are a few of the reasons why:</p>
+  			<ul>
+  				<li>One of the top programming languages in the world used in many different organizations and fields.</li>
+  				<li>The language of Android. Great for mobile apps!</li>
+  			</ul>
+  		</div>
+  		<div class="well" id="php">
+  			<p>The PHP language track is the one for you! Here are a few of the reasons why:</p>
+  			<ul>
+  				<li>One of the most popular scripting languages in the world.</li>
+  				<li>Used especially in back-end, server-side code.</li>
+  				<li>Great for content heavy websites.</li>
+  			</ul>
+  		</div>
+  		<div class="well"  id="ruby">
+  			<p>The Ruby language track is the one for you! Here are a few of the reasons why:</p>
+  			<ul>
+  				<li>A popular language among startups!</li>
+  				<li>One of the primary langues for developing web apps.</li>
+  				<li>Easy to read syntax.</li>
+  			</ul>
+  		</div>
+  		<div class="well"  id="css">
+  			<p>The CSS/Design language track is the one for you! Here are a few of the reasons why:</p>
+  			<ul>
+  				<li>The primary language of web design!</li>
+  				<li>Used to create and manipulate the visual aspect of websites.</li>
+  				<li>Great for separating style and content of web pages.</li>
+  			</ul>
+  		</div>
+  	</div>
+  </body>
 </html>

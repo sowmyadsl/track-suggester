@@ -1,13 +1,7 @@
-.answer {
-  display: none;
+#c-sharp,#java,#ruby,#css,#php {
+  display : none;
 }
 
-#output1 {
-  display: none;
-}
-#output2 {
-  display: none;
-}
-#output3 {
-  display: none;
+.well{
+  background-color: blue;
 }
