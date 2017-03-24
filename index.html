@@ -1,0 +1,94 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Track Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1> Track Suggester</h1>
+        <p>For Prospective Epicodus Students !! </p>
+      </div>
+
+    <div class="well">
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <label>What kind of company do you see yourself working for?</label>
+          <select class="form-control" id="company">
+            <option value="corp">Well-established Enterprise</option>
+            <option value="start-up">a Local startup</option>
+          </select>
+
+          <label>What interests you most about programming?</label>
+          <select class="form-control" id="interests">
+            <option value="websites">Designing websites</option>
+            <option value="business">Building software and develop products</option>
+            <option value="android">Working as Android developer</option>
+            <option value="apps">Building interactive web applications</option>
+          </select>
+
+          <label>After finishing Epicodus Course,What you would like to do?</label>
+          <select class="form-control" id="important">
+            <option value="job">Finding a job quickly</option>
+            <option value="atmosphere">Working at a company </option>
+            <option value="practical">Learn still and practice more</option>
+          </select>
+
+          <label>Which of the following interest you more?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="style" value="5" checked>
+              Back-end
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="style" value="3">
+              Front-end
+            </label>
+          </div>
+          <label>Are you looking for a designing a layout for webpages than writing code for them?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="design" value="4" checked>
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="design" value="7">
+              Both works
+            </label>
+          </div>
+        </div><!--end of col 1-->
+
+        <div class="col-md-6">
+          <div class="form-group" id="formname">
+            <label for="name">*Name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group" id="formemail">
+            <label for="email">*Email:</label>
+            <input id="email" class="form-control" type="text">
+          </div>
+          <label for="address">Address:</label>
+          <textarea id="address" class="form-control" rows="3"></textarea>
+
+          <label for="comments">Additional Comments:</label>
+          <textarea id="comments" class="form-control" rows="3"></textarea>
+          <br>
+          <button type="submit" class="btn btn-primary">Submit!</button>
+              </div><!--end of col 2-->
+            </div><!--end of row 1-->
+          </form>
+        </div><!--end of blanks/panel body-->
+      </div><!--end of formInputSection-->
+    
+      </body>
+</html>
