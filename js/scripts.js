@@ -1,11 +1,10 @@
 $(document).ready(function() {
+
 $("#question-form").submit(function(event){
 
-
-
-
   event.preventDefault();
-
+  var nameInput = $("#name").val();
+  $("#name").text(name);
   var answer1 = parseInt($("input[name=Question1]:checked").val());
   var answer2 = parseInt($("input[name=Question2]:checked").val());
   var answer3 = parseInt($("input[name=Question3]:checked").val());
@@ -23,10 +22,7 @@ $("#question-form").submit(function(event){
     }
   }
 
-  $("#question-form").hide();
   trackSuggest(result);
-  $("#question.form").show();
-  $('#question-form > input[type=reset]').trigger('click'); //with a reset button in the form set to display: none;
 
 });
 });
