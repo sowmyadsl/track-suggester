@@ -1,6 +1,9 @@
 $(document).ready(function() {
 $("#question-form").submit(function(event){
 
+
+
+
   event.preventDefault();
 
   var answer1 = parseInt($("input[name=Question1]:checked").val());
@@ -19,8 +22,10 @@ $("#question-form").submit(function(event){
       $("#track3").show();
     }
   }
+
   $("#question-form").hide();
   trackSuggest(result);
+  $("#question.form").show();
   $('#question-form > input[type=reset]').trigger('click'); //with a reset button in the form set to display: none;
 
 });

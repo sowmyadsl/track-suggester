@@ -5,3 +5,27 @@
 .btn btn-danger{
   display: none;
 }
+
+#form-heading{
+  text-align: center;
+}
+
+#question-form{
+  text-align: center;
+}
+.jumbotron {
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  padding: 200px;
+  background-image: url("../img/background3.jpg");
+  background-size: cover;
+  font-family: "lato",sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 3em;
+}
