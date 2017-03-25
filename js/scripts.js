@@ -1,35 +1,27 @@
-var trackSuggest = function(apps, mobile, large, design,software) {
-  if (apps === true) {
-    if (mobile,software === true) {
-      $("#java").show();
-    } else if (large === true) {
-      $("#c-sharp").show();
-    } else {
-      $("#ruby").show();
-    }
-  } else if (design === true) {
-    $("#css").show();
-  }  else {
-    $("#php").show();
-
-  }
-};
-
 $(document).ready(function() {
+$("#question-form").submit(function(event){
 
-  $("#submit-survey").click(function() {
-    $(".survey-result").hide();
+  event.preventDefault();
 
-    //click events */
-    var apps = $('#apps').is(':checked');
-    var mobile = $('#mobile').is(':checked');
-    var large = $('#large').is(':checked');
-    var design = $('#design').is(':checked');
-    var problem = $('#problem').is(':checked');
-    var software= $('#software').is(':checked');
+  var answer1 = parseInt($("input[name=Question1]:checked").val());
+  var answer2 = parseInt($("input[name=Question2]:checked").val());
+  var answer3 = parseInt($("input[name=Question3]:checked").val());
+  var answer4 = parseInt($("input[name=Question4]:checked").val());
+  var answer5 = parseInt($("input[name=Question5]:checked").val());
+  var result = answer1+ answer2+ answer3+ answer4+ answer5;
 
-    trackSuggest(apps, mobile, large, design,software);
+  var trackSuggest = function(answer) {
+    if(answer >= 5 && answer <= 7){
+      $("#track2").show();
+    } else if (answer >= 8 && answer <= 11){
+      $("#track1").show();
+    } else if(answer >=12 && answer <=15){
+      $("#track3").show();
+    }
+  }
 
-  });
 
+  trackSuggest(result);
+
+});
 });

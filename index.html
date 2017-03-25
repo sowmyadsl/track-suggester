@@ -11,139 +11,93 @@
 	<title>Track Suggester</title>
 </head>
 <body>
-  <!-- div class container -->
-	<div class="container">
+	<!-- div class container -->
+	<div class="container-fluid">
 		<div class="page-header">
 			<h1>Epicodus Track Suggester</h1>
-		</div>
-		<p><span class="sub-header">For Prospective Epicodus Students!</span></p>
-		<p>Currently, Epicodus offers the following tracks in Portland and Seattle:</p>
-		<ul>
-			<li>Ruby/Rails</li>
-			<li>PHP/Drupal</li>
-			<li>Java/Android</li>
-			<li>CSS/Design</li>
-			<li>C#/.NET</li>
-		</ul>
-		</p>
-    <!-- div class survey box -->
-		<div class="survey-box">
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h3 class="panel-title">Answer any three of questions and get your recommended track information:</h3>
-				</div>
-				<div class="panel-body survey-body">
-					<div class="question-title">
-						<p>What kind of software you like to work on?</p>
-					</div>
-					<div class="question-body">
+			<div class="well">
+				<!-- form with radio buttons for question1 -->
+				<form id="question-form">
+					<div class="form-group">
+						<label for="Question1" class="Question1" >What interests you more:</label>
 						<div class="radio">
-							<label><input id="software" name="software" type="radio">Proprietary</label>
+							<label><input name="Question1" type="radio" value="1"> Designing Layouts for Websites.</label>
 						</div>
 						<div class="radio">
-							<label><input name="software" type="radio">Open Source</label>
-						</div>
-						<div class="question-title">
-							<p>Would you be interested to build mobile applications or interested in building websites?</p>
-						</div>
-						<div class="question-body">
+							<label><input name="Question1" type="radio" value="2"> Building backend(server-side) software applications.</label>
 							<div class="radio">
-								<label><input id="apps" name="apps" type="radio">I want to build mobile applications!</label>
+								<label><input name="Question1" type="radio" value="3"> Developing Mobile apps.</label>
+							</div>
+						</div><br>
+						<!-- form with radio buttons for question2 -->
+						<div class="form-group">
+							<label for="Question2" class="Question2">After finishing the course in Epicodus,Where would you like to see yourself working in?</label>
+							<div class="radio">
+								<label><input name="Question2" type="radio" value="1"> An ad agency or a client.</label>
 							</div>
 							<div class="radio">
-								<label><input name="apps" type="radio">I want to build websites!</label>
-							</div>
-						</div>
-						<div class="question-title">
-							<p>Are you interested in designing content for mobile devices or larger screens?</p>
-						</div>
-						<div class="question-body">
-							<div class="radio">
-								<label><input id="mobile" name="mobile" type="radio">Yes! I love designing apps for a mobile!</label>
+								<label><input name="Question2" type="radio" value="2"> A Large Well established Enterprise.</label>
 							</div>
 							<div class="radio">
-								<label><input name="mobile" type="radio">No I enjoy building software for larger devices.</label>
+								<label><input name="Question2" type="radio" value="3"> A Local Start up.</label>
 							</div>
-						</div>
-						<div class="question-title">
-							<p>Would you like to work for a well established enterprise or for a local startup?</p>
-						</div>
-						<div class="question-body">
+						</div><br>
+						<!-- form with radio buttons for question3 -->
+						<div class="form-group">
+							<label for="Question3" class="Question3">What kind of a person are you?</label>
 							<div class="radio">
-								<label><input id="large" name="large" type="radio">Large organizations. I prefer to be organized and systematic !</label>
-							</div>
-							<div class="radio">
-								<label><input name="large" type="radio">Startups! I want to grow.</label>
-							</div>
-						</div>
-						<div class="question-title">
-							<p>Would you like to do front end or manipulate data to solve problems in the back end?</p>
-						</div>
-						<div class="question-body">
-							<div class="radio">
-								<label><input id="design" name="front" type="radio">I want to make pretty things for people!</label>
+								<label><input name="Question3" type="radio" value="1"> Creative.</label>
 							</div>
 							<div class="radio">
-								<label><input name="front" type="radio">I'm all about logic and problem solving.</label>
-							</div>
-						</div>
-						<div class="question-title">
-							<p>How do you feel about problem-solving skills?</p>
-						</div>
-						<div class="question-body">
-							<div class="radio">
-								<label><input id="problem" name="problem" type="radio">I'm up for anything</label>
+								<label><input name="Question3" type="radio" value="2"> Organized and systematic.</label>
 							</div>
 							<div class="radio">
-								<label><input name="problem" type="radio">Okay not so good</label>
+								<label><input name="Question3" type="radio" value="3"> Quirky and Cutting edge.</label>
 							</div>
-						</div>
+						</div><br>
+						<!-- form with radio buttons for question4 -->
+						<div class="form-group">
+							<label for="Question4" class="Question4">What is the first thing you notice while browsing through a website?</label>
+							<div class="radio">
+								<label><input name="Question4" type="radio" value="1"> Aesthetics.</label>
+							</div>
+							<div class="radio">
+								<label><input name="Question4" type="radio" value="2"> Functionality.</label>
+							</div>
+							<div class="radio">
+								<label><input name="Question4" type="radio" value="3"> Usability.</label>
+							</div>
+						</div><br>
+						<!-- form with radio buttons for question5 -->
+						<div class="form-group">
+							<label for="Question5" class="Question5">What do you do during your free time?</label>
+							<div class="radio">
+								<label><input name="Question5" type="radio" value="1"> Painting.</label>
+							</div>
+							<div class="radio">
+								<label><input name="Question5" type="radio" value="2"> Solving Puzzles.</label>
+							</div>
+							<div class="radio">
+								<label><input name="Question5" type="radio" value="3"> Learning new languages.</label>
+							</div>
+						</div><!-- Button for submitting the selected options -->
+						<button class="btn btn-success" type="submit">Submit</button><br>
+						<br>
+						<!-- End of form -->
 					</div>
-				</div>
-        <!-- Shows the result of survey -->
-			</div><button class="btn btn-primary" id="submit-survey">Submit</button><br>
-			<br>
-			<br>
-			<div class="well" id="c-sharp">
-				<p>Hey there ! The C# language track is the one for you! Here are a few of the reasons why:</p>
-				<ul>
-					<li>A well estabilished language used by mostly large enterprise companies and government organizations</li>
-					<li>It is language of Microsoft and Windows</li>
-					<li>Used for building video games with the Unity Engine and for virtual reality software.</li>
-				</ul>
-			</div>
-		</div>
-		<div class="well" id="java">
-			<p>Hello there ! The Java language track is the one for you! Here are a few of the reasons why:</p>
-			<ul>
-				<li>An object oriented programming language used mostly in building software and developing apps</li>
-				<li>Android uses java to develop mobile apps</li>
-			</ul>
-		</div>
-		<div class="well" id="php">
-			<p>The PHP language track is the one for you! Here are a few of the reasons why:</p>
-			<ul>
-				<li>One of the most popular scripting languages</li>
-				<li>Used especially in back-end, server-side code.</li>
-				<li>Great for content heavy websites.</li>
-			</ul>
-		</div>
-		<div class="well" id="ruby">
-			<p>The Ruby language track is the one for you! Here are a few of the reasons why:</p>
-			<ul>
-				<li>A popular language among new startups!</li>
-				<li>One of the primary languages for developing web app's.</li>
-				<li>Easy to read syntax.</li>
-			</ul>
-		</div>
-		<div class="well" id="css">
-			<p>The CSS/Design language track is the one for you! Here are a few of the reasons why:</p>
-			<ul>
-				<li>The primary language of web design!</li>
-				<li>Used to create and manipulate the visual aspect of websites.</li>
-				<li>Great for separating style and content of web pages.</li>
-			</ul>
-		</div>
+				</form><!-- End of div form group -->
+			</div><!-- End of div well -->
+		</div><!-- End of div page header -->
+	</div><!-- div class for showing track1     -->
+	<div class="panel panel-info" id="track1">
+	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p><img alt="photo of C# sharp logo" src="img/csharp-logo.png"></div><!-- Div class for showing track 2 -->
+	<div class="panel panel-info" id="track2">
+		<img alt="photo of CSS logo" height="250px" src="img/css-logo.png" width="250px">
+		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+	</div><!-- Div class for showing output3 -->
+	<div class="panel panel-info" id="track3">
+		<img alt="photo of Java Android logo" src="img/java-android.png">
+		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 	</div>
 </body>
 </html>
