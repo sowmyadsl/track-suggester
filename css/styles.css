@@ -1,3 +1,7 @@
 #track1,#track2,#track3{
   display: none;
 }
+
+.btn btn-danger{
+  display: none;
+}

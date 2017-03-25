@@ -19,9 +19,9 @@ $("#question-form").submit(function(event){
       $("#track3").show();
     }
   }
-
-
+  $("#question-form").hide();
   trackSuggest(result);
+  $('#question-form > input[type=reset]').trigger('click'); //with a reset button in the form set to display: none;
 
 });
 });
