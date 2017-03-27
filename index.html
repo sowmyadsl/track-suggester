@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<script src="js/jquery-3.2.0.js">
 	</script>
 	<script src="js/scripts.js">
@@ -14,107 +13,112 @@
 <body>
 	<!-- div class container -->
 	<div class="jumbotron">
-		 <div class="container">
-			 <div class="jumbo-text">
-				 <h1>EPICODUS TRACK SUGGESTER</h1>
-				 <p><em>Find the track that's right for you</em></p>
-			 </div>
-		 </div>
-	 </div>
-
-				<form id="question-form">
-
-          <div class="form-group">
-          <label for="name">Enter your name:</label>
-          <input id="name" class="form-control" type="text" required>
-          </div>
-							<!-- form with radio buttons for question1 -->
-					<div class="form-group1">
-					<label for="Question1" class="Question1">What interests you more:</label>
-					<div class="radio">
+		<div class="container">
+			<div class="jumbo-text">
+				<h1>EPICODUS TRACK SUGGESTER</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<form id="question-form" name="question-form">
+			<div class="form-group">
+				<!-- form input for user to input the name: -->
+				<label for="name">Enter your name:</label> <input class="form-control" id="name" required="" type="text">
+			</div><!-- form with radio buttons for question1 -->
+			<div class="form-group1">
+				<label class="Question1" for="Question1">What interests you more?</label>
+				<div class="radio">
 					<label><input name="Question1" type="radio" value="1"> Designing Layouts for Websites.</label>
-					</div>
-					<div class="radio">
+				</div>
+				<div class="radio">
 					<label><input name="Question1" type="radio" value="2"> Building backend(server-side) software applications.</label>
 					<div class="radio">
-					<label><input name="Question1" type="radio" value="3"> Developing Mobile apps.</label>
+						<label><input name="Question1" type="radio" value="3"> Developing Mobile apps.</label>
 					</div>
-					</div>
-					</div>
+				</div>
+			</div><br>
+			<!-- form with radio buttons for question2 -->
+			<div class="form-group2">
+				<label for="Question2">After finishing the course in Epicodus,Where would you like to see yourself working in?</label>
+				<div class="radio">
+					<label><input name="Question2" type="radio" value="1"> An ad agency or a client.</label>
+				</div>
+				<div class="radio">
+					<label><input name="Question2" type="radio" value="2"> A Large Well established Enterprise.</label>
+				</div>
+				<div class="radio">
+					<label><input name="Question2" type="radio" value="3"> A Local Start up.</label>
+				</div>
+			</div><br>
+			<!-- form with radio buttons for question3 -->
+			<div class="form-group3">
+				<label class="Question3" for="Question3">What kind of a person are you?</label>
+				<div class="radio">
+					<label><input name="Question3" type="radio" value="1"> Creative.</label>
+				</div>
+				<div class="radio">
+					<label><input name="Question3" type="radio" value="2"> Organized and systematic.</label>
+				</div>
+				<div class="radio">
+					<label><input name="Question3" type="radio" value="3"> Quirky and Cutting edge.</label>
+				</div>
+			</div><br>
+			<!-- form with radio buttons for question4 -->
+			<div class="form-group4">
+				<label class="Question4" for="Question4">What is the first thing you notice while browsing through a website?</label>
+				<div class="radio">
+					<label><input name="Question4" type="radio" value="1"> Aesthetics.</label>
+				</div>
+				<div class="radio">
+					<label><input name="Question4" type="radio" value="2"> Functionality.</label>
+				</div>
+				<div class="radio">
+					<label><input name="Question4" type="radio" value="3"> Usability.</label>
+				</div>
+			</div><br>
+			<!-- form with radio buttons for question5 -->
+			<div class="form-group5">
+				<label class="Question5" for="Question5">What do you do during your free time?</label>
+				<div class="radio">
+					<label><input name="Question5" type="radio" value="1"> Painting.</label>
+				</div>
+				<div class="radio">
+					<label><input name="Question5" type="radio" value="2"> Solving Puzzles.</label>
+				</div>
+				<div class="radio">
+					<label><input name="Question5" type="radio" value="3"> Learning new languages.</label>
+				</div>
+			</div><!-- Button for submitting the selected options -->
+			<button class="btn-info" type="submit">Submit</button><br>
+			<br>
+			<!-- End of form -->
+		</form><!-- End of div form group -->
+	</div><!--End of div container form -->
 
-
-						<br>
-						<!-- form with radio buttons for question2 -->
-						<div class="form-group2">
-							<label for="Question2" >After finishing the course in Epicodus,Where would you like to see yourself working in?</label>
-							<div class="radio">
-								<label><input name="Question2"  type="radio" value="1"> An ad agency or a client.</label>
-							</div>
-							<div class="radio">
-								<label><input name="Question2" type="radio" value="2"> A Large Well established Enterprise.</label>
-							</div>
-							<div class="radio">
-								<label><input name="Question2" type="radio" value="3"> A Local Start up.</label>
-							</div>
-						</div><br>
-						<!-- form with radio buttons for question3 -->
-						<div class="form-group3">
-							<label for="Question3" class="Question3">What kind of a person are you?</label>
-							<div class="radio">
-								<label><input name="Question3" type="radio" value="1"> Creative.</label>
-							</div>
-							<div class="radio">
-								<label><input name="Question3" type="radio" value="2"> Organized and systematic.</label>
-							</div>
-							<div class="radio">
-								<label><input name="Question3" type="radio" value="3"> Quirky and Cutting edge.</label>
-							</div>
-						</div><br>
-						<!-- form with radio buttons for question4 -->
-						<div class="form-group4">
-							<label for="Question4" class="Question4">What is the first thing you notice while browsing through a website?</label>
-							<div class="radio">
-								<label><input name="Question4" type="radio" value="1"> Aesthetics.</label>
-							</div>
-							<div class="radio">
-								<label><input name="Question4" type="radio" value="2"> Functionality.</label>
-							</div>
-							<div class="radio">
-								<label><input name="Question4" type="radio" value="3"> Usability.</label>
-							</div>
-						</div><br>
-						<!-- form with radio buttons for question5 -->
-						<div class="form-group5">
-							<label for="Question5" class="Question5">What do you do during your free time?</label>
-							<div class="radio">
-								<label><input name="Question5" type="radio" value="1"> Painting.</label>
-							</div>
-							<div class="radio">
-								<label><input name="Question5" type="radio" value="2"> Solving Puzzles.</label>
-							</div>
-							<div class="radio">
-								<label><input name="Question5" type="radio" value="3"> Learning new languages.</label>
-							</div>
-						</div><!-- Button for submitting the selected options -->
-						<button class="btn btn-success" type="submit">Submit</button><br>
-						<br>
-						<button class="btn btn-danger" type="reset">Reset</button><br>
-						<br>
-						<!-- End of form -->
-
-				</form><!-- End of div form group -->
-
-
-	<!-- div class for showing track1     -->
-	<div class="panel panel-info" id="track1">
-	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p><img alt="photo of C# sharp logo" src="img/csharp-logo.png"></div><!-- Div class for showing track 2 -->
-	<div class="panel panel-info" id="track2">
-		<img alt="photo of CSS logo" height="250px" src="img/css-logo.png" width="250px">
-		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-	</div><!-- Div class for showing output3 -->
-	<div class="panel panel-info" id="track3">
-		<img alt="photo of Java Android logo" src="img/java-android.png">
-		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-	</div>
+	<div id="answer-div"><!-- start of div answer -->
+		<div class="tracks" id="track1">
+			<img class="img-answers" src="img/answer.png">
+			<h2 class="answer-div-header">Your Ideal Track Might Be:</h2>
+			<h1>C#</h1>
+			<p>C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the .NET Framework. You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more.<br>
+			Visual C# provides an advanced code editor, convenient user interface designers, integrated debugger, and many other tools to make it easier to develop applications based on the C# language and the .NET Framework.<br>
+			Students who finish C# net end up working in large well established enterprise firms.</p>
+		</div>
+		<div class="tracks" id="track2">
+			<img class="img-answers" src="img/answer.png">
+			<h2 class="answer-div-header">Your Ideal Track Might Be:</h2>
+			<h1>CSS/ DESIGN</h1>
+			<p>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.</p>
+		</div>
+		<div class="tracks" id="track3">
+			<img class="img-answers" src="img/answer.png">
+			<h2 class="answer-div-header">Your Ideal Track Might Be:</h2>
+			<h1>JAVA and ANDROID</h1>
+			<p>Java is the most popular Object oriented programming language in the world. It's used for everything from web applications to backend services to mobile applications to embedded systems. Students who learn Java programming will be able to create dynamic web applications, and be able continue into our Android track.</p>
+		</div><br>
+		<br>
+		<br>
+		<button id="try-again" type="button">Try Again</button><!--Try again button -->
+	</div><!--end of answer div -->
 </body>
 </html>

@@ -13,6 +13,8 @@ This is an independent project for Epicodus week 2 (Javascript and Jquery).This 
 * Clone/download repo
 * Open index.html on a terminal or a browser.
 
+
+
 ## Known Bugs
 
 No known bugs as of now.

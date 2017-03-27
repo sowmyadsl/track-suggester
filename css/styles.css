@@ -1,29 +1,57 @@
-#track1,#track2,#track3{
-  display: none;
+.img-answers {
+	height: 200px;
+	width: 200px;
 }
-
-.btn btn-danger{
-  display: none;
+.btn-info {
+	font-size: 1em;
+	transition: all 0.5s;
+	width: 12.5%;
+	background-color: #00b3b4;
 }
-
-#form-heading{
-  text-align: center;
+#try-again {
+	font-size: 2em;
+	transition: all 0.5s;
+	width: 12.5%;
+	background-color: #00b3b4;
+	color: #fff;
 }
-
-
+#question-form {
+	font-size: 1.5em;
+	font-family: 'Josefin Sans', sans-serif;
+}
+#name {
+	font-size: 23px;
+}
+.jumbo-text {
+	font-size: 20px;
+}
+#answer-div {
+	display: none;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 50px;
+}
+#answer-div-header {
+	font-weight: 400;
+}
+.tracks {
+	display: none;
+}
+.tracks p {
+	text-align: justify;
+	font-size: 25px;
+}
 .jumbotron {
-  height: 100vh;
-  color: #fff;
-  text-align: center;
-  padding: 200px;
-  background-image: url("../img/background3.jpg");
-  background-size: cover;
-  font-family: "lato",sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 3em;
+	height: 100vh;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 200px;
+	background-image: url("../img/background3.jpg");
+	background-size: cover;
+	font-size: 33px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 1000;
+	line-height: 3em;
+	-webkit-text-fill-color: black;
 }
