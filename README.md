@@ -12,12 +12,13 @@ This is an independent project for Epicodus week 2 (Javascript and Jquery).This 
 
 * Clone/download repo
 * Open index.html on a terminal or a browser.
+* Or, visit http://sowmyadsl.github.io/track-suggester
 
 
 
 ## Known Bugs
 
-No known bugs as of now.
+Sometimes try again button just disappears from the result page.I ll fix that in future.
 
 ## Support and contact details
 
